@@ -104,4 +104,4 @@ s1.lname = "patel"
 s1.display()
 
 let s2 = Student(sid:11, fname: "sushmitha",lname: "varma")
-s1.display()
+s2.display()
