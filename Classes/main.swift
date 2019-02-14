@@ -56,15 +56,29 @@ struct Employee
     var enm: String
     var Salary :Float
     
+    init()
+    {
+        eid = -1
+        enm = String()
+        Salary = 0.0          
+    }
+    
     func display()
     {
         print(self.eid)
         print(self.enm)
         print(self.Salary)
     }
+    
+    mutating func setName(name : String)
+    {
+    self.enm = name
+}
 }
 
-var e1 = Employee(eid: 1, enm: "Ash rai", Salary:1200.00)
+//var e1 = Employee(eid: 1, enm: "Ash rai", Salary:1200.00)
+
+var e1 = Employee()
 
 e1.display()
 
@@ -78,7 +92,10 @@ print(i,a)
 
 var e2 = e1
 e2.eid = 200
+e2.setName(name:"sushmitha")
+
 e2.display()
+
 
 
 
