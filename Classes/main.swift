@@ -107,3 +107,12 @@ let s2 = Student(sid:11, fname: "sushmitha",lname: "varma")
 s2.display()
 
 
+var studentArray = [Student]()
+
+studentArray.append(s1)
+studentArray.append(s2)
+
+for s in studentArray
+{
+    s.display()
+}
