@@ -10,89 +10,12 @@ import Foundation
 
 print("Hello, World!")
 
-class Person
-{
-    var pid : Int = 0
-    var fname : String!
-    var lname : String?
-    
-    func setData()
-        
-    {
-        
-        fname = "pritesh"
-       lname = "patel"
-        
-    }
-
-func display()
-{
-    print(pid)
-   //print(fname)
-  // print(lname!)
-
-let l = lname ?? "patel"
-    
-    if let f = fname, let l = lname
-    {
-    
-    let s = fname + " " + l
-        
-        print(s)
-    }
-    
-    print(lname)
-    
-}
-
-}
 
 var p1 = Person()
 
 p1.setData()
 p1.display()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-class Student
-{
-    var sid : Int
-    var fname : String
-    var lname : String
-
-
-init ()
-{
-    sid = 0
-    fname = String()
-    lname = String()
-}
-
-init(sid:Int,fname: String,lname : String)
-{
-    self.sid = sid
-    self.fname = fname
-    self.lname = lname
-}
-
-func display()
-{
-    print("student id: \(self.sid)")
-    print("student firstname : \(self.fname)")
-    print("student lastname : \(self.lname)")
-}
-}
 
 var s1 = Student()
 s1.display()
@@ -116,3 +39,25 @@ for s in studentArray
 {
     s.display()
 }
+
+var c1 = Car()
+
+c1.vin = "2t45DSRTYT987"
+c1.model = "toyota"
+c1.color = .blue
+c1.type = "corolla"
+c1.speed = 70.0
+
+c1.display()
+
+
+
+
+
+
+
+
+
+
+
+
