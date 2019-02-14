@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum Color
+public enum Color:CaseIterable
 {
     case red
     case blue

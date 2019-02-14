@@ -50,6 +50,37 @@ c1.speed = 70.0
 
 c1.display()
 
+struct Employee
+{
+    var eid : Int
+    var enm: String
+    var Salary :Float
+    
+    func display()
+    {
+        print(self.eid)
+        print(self.enm)
+        print(self.Salary)
+    }
+}
+
+var e1 = Employee(eid: 1, enm: "Ash rai", Salary:1200.00)
+
+e1.display()
+
+var i : Int = 100
+var a : Int
+
+a = i
+a = 200
+print(i,a)
+
+
+var e2 = e1
+e2.eid = 200
+e2.display()
+
+
 
 
 
